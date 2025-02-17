@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "GitHub Profile Enhancer",
+    "version": "1.0",
+    "description": "Enhances GitHub profiles with better visuals and statistics",
+    "permissions": ["storage"],
+    "content_scripts": [
+      {
+        "matches": ["https://github.com/mdzubayerhossain"],
+        "css": ["styles.css"],
+        "js": ["content.js"]
+      }
+    ],
+    "web_accessible_resources": [{
+      "resources": ["Inter.woff2"],
+      "matches": ["https://github.com/*"]
+    }]
+  }
