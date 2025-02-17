@@ -1,0 +1,78 @@
+/* content.css */
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: url(chrome-extension://__MSG_@@extension_id__/Inter.woff2) format('woff2');
+  }
+  
+  /* Base styling */
+  .js-profile-editable-replace {
+    padding: 2rem !important;
+    background: linear-gradient(145deg, #1a1a1a, #2d2d2d) !important;
+    border-radius: 12px !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+  }
+  
+  .profile-header {
+    display: flex !important;
+    gap: 2rem !important;
+    flex-wrap: wrap !important;
+  }
+  
+  .vcard-names {
+    font-family: 'Inter', sans-serif !important;
+    letter-spacing: -0.05em !important;
+  }
+  
+  /* Stats container */
+  .enhanced-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.05) !important;
+    border-radius: 8px;
+    margin-top: 2rem;
+  }
+  
+  .stat-item {
+    text-align: center;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+  }
+  
+  .stat-value {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #58a6ff;
+  }
+  
+  /* Layout switcher */
+  .layout-switcher {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 9999;
+  }
+  
+  .layout-btn {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border: none !important;
+    padding: 8px 16px !important;
+    border-radius: 6px !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+  }
+  
+  .layout-btn:hover {
+    background: rgba(255, 255, 255, 0.2) !important;
+  }
+  
+  /* Grid layout */
+  .grid-layout .js-profile-editable-replace {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
